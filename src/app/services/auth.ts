@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AuthService {
   private http = inject(HttpClient);
   private router = inject(Router);
-  private apiUrl = 'http://localhost:3005/api/auth'
+  private apiUrl = 'https://back-end-products.onrender.com/api/auth'
 
   private currentUserSubject = new BehaviorSubject<UserDecoded | null>(this.getUserFromStorage());
   public currentUser$ = this.currentUserSubject.asObservable();
