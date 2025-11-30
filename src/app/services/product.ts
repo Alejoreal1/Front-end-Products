@@ -11,7 +11,7 @@ export class ProductService {
   private http = inject(HttpClient);
 
   // URL basada en tu 'application.properties' (puerto 3005) y 'ProductController' (/api/products)
-  private apiUrl = 'https://back-end-products.onrender.com/api/products';
+  private apiUrl = 'https://back-end-fpo5.onrender.com/api/products';
 
 
   /**
